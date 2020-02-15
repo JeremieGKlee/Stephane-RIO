@@ -1,44 +1,35 @@
     * {
         box-sizing: border-box;
     }
-    
     body {
         background-color: white;
         width: 100%;
         margin: auto;
     }
-    
     header {
         border-bottom: black 2px solid;
-        background-color: white;
         display: flex;
         margin-bottom: 1em;
     }
-    
     .retour {
         padding: 0;
         padding-top: 1em;
         flex: 1;
     }
-    
     #img_logo_rio2016 {
         height: 80px;
     }
-    
     nav {
         flex: 4;
-        background-color: white;
         display: flex;
         justify-content: space-evenly;
     }
-    
-    #nav1 a {
+    nav a {
         color: black;
         text-decoration: none;
         padding-top: 3em;
         margin: 0 1em;
     }
-    
     .section1 {
         display: flex;
         align-items: flex-end;
@@ -48,7 +39,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
     .img_plage_lien {
         display: flex;
         justify-content: space-between;
@@ -56,160 +46,149 @@
         height: 30px;
         width: 100%;
     }
-    
     span {
         padding-left: 0.5em;
         padding-top: 0.5em;
         color: white;
     }
-    
     .lien_art {
         padding-top: 0.5em;
         background-color: red;
         color: white;
         margin-right: 1em;
     }
+    /* Plage de rio avec façon background */
     
-    .section2 {
+    /* figure {
+        display: flex;
+        flex-flow: column;
+        max-width: 100%;
+        margin: auto;
+    }
+    #img_plage_rio {
+        max-height: 20vw;
+    }
+    #fig_a{
+        height:2em;
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    figcaption {
+        padding-left: 1em;
+        padding-top: 0.6em;
+        color: #fff;
+        font: italic smaller sans-serif;
+    }
+    figure a{
+        padding-top: 0.3em;
+        margin-right: 1em;
+        background-color: red;
+        color: white;
+    } */
+     /* Plage de rio avec façon figure et figcaption */
+     .section2 {
         display: flex;
         margin-top: 20px;
         border-bottom: black 2px solid;
     }
-    
     .titre_h1_img {
         flex: 7;
         display: flex;
         text-align: center;
     }
-    
     .img_point_dint {
         height: 40px;
         margin-right: 1em;
     }
-    
     h1 {
         color: black;
-        text-align: center;
     }
-    
     article {
-        background-color: white;
+        padding-right: 1em;
         color: black;
-        width: 80%;
+        flex:7;
     }
-    
+    article p{
+        text-align: justify;
+    }
     aside {
         background-color: black;
-        width: 20%;
+        flex:3;
         text-align: center;
-        height: 550px;
+        height: 650px;
     }
-    
     h2 {
         color: white;
     }
     
     .drapeau_de_rio {
-        width: 200px;
+        width: 80%;
     }
-    
     aside p {
         text-align: left;
         color: white;
         padding: 0.5em;
     }
-    
-    .a_aside {}
-    
     .lien_reseaux {
         display: flex;
+        margin: auto;
         width: 90%;
-        margin: auto;
-        justify-content: space-around;
     }
-    
     .lien_reseaux img {
-        width: 40px;
+        width: 80%;
     }
-    
     footer {
-        width: 100%;
         display: flex;
-        justify-content: space-between;
-        background-color: white;
-        margin: auto;
-        height: 150px;
+        height: 15vw;
     }
-    
     h3 {
         color: Black;
     }
-    
-    .Newsletter {
-        width: 20%;
+    .titre_photo h3,.partenaires h3{
+        margin-left:1em;
     }
-    
-    .Photo {
-        width: 40%;
+    /* h3:not(.newsletter){
+        margin-left:1em;
+    } */
+    .newsletter {
+        flex:4;
     }
-    
+    input{
+        max-width:300px;
+    }
+    .titre_photo {
+        flex: 6;
+        margin-left: 2em;
+    }
     .photo img {
         width: 100px;
         height: 100px;
+        margin-left: 1em;
     }
-    
-    .Partenaires {
-        width: 40%;
+    .partenaires {
+        flex: 6;
+        margin-left: 2em;
     }
-    
-    .Partenaires img {
+    .partenaires img {
         width: 100px;
+        margin-left: 1em;
     }
-    /* @media screen and (max-width:375px) {
-    .imgSimps {
-        width: 100%;
-        margin-bottom: -10px;
-    }
-    section {
-        flex-direction: column;
-        padding: 0;
-    }
-    .pad {
-        flex-direction: column;
-    }
-    article {
-        width: 100%;
-    }
-    nav {
-        width: 100%;
-        margin: 0;
-    }
-    aside {
-        width: 100%;
-        margin: 0;
-    }
-}
+    @media screen and (max-width:375px) {
+        
+        header,nav,.section2,footer {
+            display: inline-block;
+        }
+        article{
+            padding:0;
+        }
+        /* *[class] {
+            margin:0;
+         } */
+        }
+
+
+   
 
 @media screen and (min-width: 376px) and (max-width: 1024px) {
-    .imgSimps {
-        width: 100%;
-        margin-bottom: -10px;
-    }
-    section {
-        flex-direction: column;
-        padding: 10px;
-        height: 100%;
-    }
-    article {
-        padding-right: 16px;
-        padding-bottom: 0;
-    }
-    aside {
-        display: flex;
-        Margin: 15px;
-        width: auto;
-    }
-    .separationnav {
-        width: 70%;
-    }
-} */

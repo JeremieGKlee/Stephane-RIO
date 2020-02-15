@@ -25,11 +25,19 @@
         </header>
         <main>
             <section class="section1">
-                <!-- <img src="Photo/plagederio.jpg" alt="Plage de Rio de nuit"> -->
+                <!-- <figure>
+                    <img src="Photo/plagederio.jpg" alt="Plage de Rio" id="img_plage_rio"></img>
+                    <div id="fig_a">   
+                        <figcaption>Zoom sur les Jeux Olympiques de Rio 2016</figcaption>
+                        <a href="#" class="lien_art">Voir l'article></a>
+                    </div>
+                </figure> -->
+               <!-- Plage de rio avec façon figure et figcaption-->
                 <div class="img_plage_lien">
                     <span>Zoom sur les Jeux Olympiques de Rio 2016</span>
                     <a href="#" class="lien_art">Voir l'article></a>
                 </div>
+                <!-- Plage de rio avec façon background -->
             </section>
             <section class="section2">
                 <article>
@@ -67,19 +75,19 @@
                     <p>Population: 6 323 037 (2010)</p>
                     <p>Superficie: 1 260km²</p>
                     <div class="lien_reseaux">
-                        <a href="#ancre_section1" class="a_aside">
+                        <a href="#lien_reseaux" class="a_aside">
                             <img src="Photo/facebook.png" alt="Lien Facebook" class="img_facebook"></img>
                         </a>
-                        <a href="#ancre_section1" class="a_aside">
+                        <a href="#lien_reseaux" class="a_aside">
                             <img src="Photo/twiter.png" alt="Lien Twitter" class="img_twitter"></img>
                         </a>
-                        <a href="#ancre_section1" class="a_aside">
+                        <a href="#lien_reseaux" class="a_aside">
                             <img src="Photo/vimeo.jpg" alt="Lien Vimeo" class="img_vimeo"></img>
                         </a>
-                        <a href="#ancre_section1" class="a_aside">
+                        <a href="#lien_reseaux" class="a_aside">
                             <img src="Photo/Flickr.jpg" alt="Lien Flickr" class="img_flickr"></img>
                         </a>
-                        <a href="#ancre_section1" class="a_aside">
+                        <a href="#lien_reseaux" class="a_aside">
                             <img src="Photo/fluxRSS.png" alt="Lien Flux RSS" class="img_fluxrss"></img>
                         </a>
                     </div>
@@ -87,30 +95,32 @@
             </section>
         </main>
         <footer>
-            <div class="Newsletter">
+            <div class="newsletter">
                 <h3>NEWSLETTER</h3>
                 <form id="contact" action="" method="post">
-                    <fieldset>
-                        <input placeholder="Votre Nom et votre Prénom" type="text" tabindex="1" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Votre adresse Email" type="email" tabindex="2" required>
-                    </fieldset>
-                    <fieldset>
+                        <input placeholder="Votre Nom et votre Prénom" type="text" required>
+                        <input placeholder="Votre adresse Email" type="email" required>   
                         <button name="submit" type="submit" id="contact_submit" data-submit="...submit">S'abonner</button>
-                    </fieldset>
                 </form>
             </div>
             <div class="titre_photo">
                 <h3>PHOTOS</h3>
                 <div class="photo">
-                    <img src="Photo/photo1rio.jpg" alt="Image de Rio 1">
-                    <img src="Photo/photo2rio.jpg" alt="Image de Rio 2">
-                    <img src="Photo/photo3rio.jpg" alt="Image de Rio 3">
-                    <img src="Photo/photo4rio.jpg" alt="Image de Rio 4">
+                    <a href="Photo/photo1rio.jpg" class="a_lien_photo">
+                        <img src="Photo/photo1rio.jpg" alt="Image de Rio 1">
+                    </a>
+                    <a href="Photo/photo2rio.jpg" class="a_lien_partenaires">    
+                        <img src="Photo/photo2rio.jpg" alt="Image de Rio 2">
+                    </a>
+                    <a href="Photo/photo3rio.jpg" class="a_lien_partenaires">
+                        <img src="Photo/photo3rio.jpg" alt="Image de Rio 3">
+                    </a>
+                    <a href="Photo/photo4rio.jpg" class="a_lien_partenaires">    
+                        <img src="Photo/photo4rio.jpg" alt="Image de Rio 4">
+                    </a>
                 </div>
             </div>
-            <div class="Partenaires">
+            <div class="partenaires">
                 <h3>PARTENAIRES</h3>
                 <div class="lien_partenaires">
                     <a href="#" class="a_lien_partenaires">
