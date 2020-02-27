@@ -10,6 +10,7 @@
         border-bottom: black 2px solid;
         display: flex;
         margin-bottom: 1em;
+        width: 100%;
     }
     .retour {
         padding: 0;
@@ -153,42 +154,150 @@
         margin-left:1em;
     } */
     .newsletter {
-        flex:4;
+        flex:3;
     }
     input{
-        max-width:300px;
+        max-width:200px;
     }
     .titre_photo {
-        flex: 6;
-        margin-left: 2em;
+        flex: 3;
     }
     .photo img {
         width: 100px;
         height: 100px;
-        margin-left: 1em;
     }
     .partenaires {
-        flex: 6;
-        margin-left: 2em;
+        flex: 3;
     }
     .partenaires img {
         width: 100px;
-        margin-left: 1em;
     }
-    @media screen and (max-width:375px) {
-        
+    /*menu buerger*/
+    #burger, #burger-content{
+        display:inline;
+    }
+    #burger_button{
+        display: none;
+        cursor:pointer;
+        background: none;
+        border:none;
+        font-size: 30px;
+        padding:0;
+        vertical-align: top;
+        line-height: 47px;
+        float: right;
+        margin-right: 32px;
+    }
+    #burger_overlay{
+        display: none;
+        position:fixed;
+        z-index: 2;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    #burger_sidebar{
+        display:none;
+        position:fixed;
+        width:84%;
+        z-index: 3;
+        height: 100%;
+        top:0;
+        left:0;
+        background-color: #FFF;
+        transform: translateX(-100%);
+        transition: transform 0.2s ease-out;
+    }
+    #burger_sidebar a{
+        display:block;
+    }
+    #burger_sidebar_header{
+        background: url(../photo/photo2burger.jpg) center;
+        background-size: cover;
+        height:128px;
+    }
+    #burger_sidebar_body{
+        padding:16px 8px;
+    }
+    #burger_sidebar_body a:before{
+        content:" ";
+        display: inline-block;
+        vertical-align: middle;
+        width:24px;
+        height:24px;
+        margin-right: 16px;
+        margin-bottom: 4px;
+    
+    }
+    #burger_sidebar_body a:first-child:before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body a:nth-child(2):before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body a:nth-child(3):before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body a:last-child:before{
+        background-image: url(../Photo/icons8-iron-man.svg);
+    }
+    #burger_sidebar_body .button{
+        float:none;
+        display: block;
+        text-align: center;
+        margin-top: 16px;
+        height:auto;
+        padding:10px;
+        line-height: inherit;    
+    }
+    @media screen and (max-width: 1024px){
+        #burger_content{
+            display: none;
+        }
+        #burger_button, #burger_sidebar,
+        .burger_activated #burger_overlay{
+            display: block;
+        }
+        .burger_activated #burger_sidebar{
+            transform:translateX(0);
+        }
         header,nav,.section2,footer {
             display: inline-block;
         }
         article{
             padding:0;
         }
+        .img_plage_lien {
+            display: block;
+        }
+        .lien_art {
+            padding-top: 0;
+            width: 100%;
+    
+        }
+        span {
+            padding:0;
+        }
+        h3 {
+            width: 100%;
+        }
+    }
+    /* @media screen and (max-width:375px) {
+        
+        header,nav,.section2,footer {
+            display: inline-block;
+        }
+        article{
+            padding:0;
+        } */
         /* *[class] {
             margin:0;
          } */
-        }
+        /* }
 
 
    
 
-@media screen and (min-width: 376px) and (max-width: 1024px) {
+    @media screen and (min-width: 376px) and (max-width: 1024px) {
+} */
